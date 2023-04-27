@@ -1,0 +1,57 @@
+public class FigurasGeometricas {
+
+Método "area" para un cuadrado
+public double area(double Lado) {
+return lado * lado;
+
+Método "area" para un rectangulo
+public double area(double base, double altura) {
+return base * altura;
+
+Método “area” para un circulo
+public double area(double radio, String unidad) {
+double area = Math.PI * radio * radio;
+if (unidad.equals("cn)) {
+return area;
+} else i (unidad. equals
+return area * 10000;
+} else {
+throw new TllegalArgunentException("La unidad especificada no es valida.");}
+
+
+public static void main(String[] args) {
+
+FigurasGeometricas figuras = new FigurasGeometricas();
+
+double areal = figuras.area(5.0); lve
+
+double area2 = figuras.area(4.0, 6.0);
+
+double area3 = figuras.area(3.0,"cm");
+double areas = figuras.area(3.0,"m");
+
+double areas = figuras.area(3.0, "pies");
+
+
+class Caleuladora (
+
+static final double PI - 3.14159; // variable estática
+método estático
+public static double sumar(double 0, double b) {
+return a + bj
+
+método con vararg
+public static double sumariumeros(double... numeros) {
+double total - 9;
+for (double numero + numeros) {
+total + nunero;
+
+return total;
+public class EjemplostaticWargs {
+public static void main(stringl] args) €
+Acceder a 1a variable estática
+System.out.printin(“Valor de PI: * + Calculadora.PI);
+Llamar al método estático
+E System.out.printin("suma: * + Calculadora.susar(2.8, 3.0);
+/ / Llamar al método con varargs
+systen.out.printin(*Suma de números: * + Calculadora. sunarNumeros(1.0, 2.0, 3.8, 4.0, 5.0));
