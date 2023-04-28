@@ -1,0 +1,14 @@
+<head>
+	Va ir el nombre, ícono, estilos y algunos paquetes
+	a utilizar.
+</head>
+<body>
+	Imágenes, textos, links, todo lo que se mostrará
+	en la página.
+</body>
+Etiqueta h: Representan títulos y encabezados.
+Describe el tema de la sección, va desde h1 hasta h6.
+Etiqueta p: "Párrafos" --> Agrupa bloque de textos en 
+párrafos.
+Alt+Z para que el párrafo se ajuste a la página del código.
+<br>: Etiqueta de salto de línea, no tiene cierre.
