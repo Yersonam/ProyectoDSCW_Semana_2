@@ -1,0 +1,69 @@
+
+package ejemplo_interfaz_1;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Carpintero c = new Carpintero();
+        Fontanero f = new Fontanero();
+        c.setNombreCompleto("Pedro Pérez Perera");
+        c.trabajar();
+        f.setNombreCompleto("Antonio Miranda Mena");
+        f.trabajar();
+    }
+}
+
+
+package ejemplo_interfaz_1;
+
+ public class Carpintero extends Persona implements IEmpleado
+{
+    public Carpintero() {
+    }
+    // -------------------------
+     @Override
+     public void trabajar() {
+        System.out.println( this.getNombreCompleto() + " está realizando trabajos de carpintería");
+    }
+}
+
+
+package ejemplo_interfaz_1;
+
+ public class Fontanero extends Persona implements IEmpleado
+{
+    public Fontanero() {
+    }
+    // -------------------------
+     @Override
+     public void trabajar() {
+        System.out.println( this.getNombreCompleto() + " está realizando trabajos de fontanería");
+    }
+}
+
+
+package ejemplo_interfaz_1;
+
+public interface IEmpleado
+{
+    // Método que deberán definir las clases que implementen esta interface
+     public void trabajar();
+}
+
+
+package ejemplo_interfaz_1;
+public class Persona
+{
+    private String nombreCompleto;
+    // -------------------------
+    public Persona() {
+    }
+    // -------------------------
+    public String getNombreCompleto() {
+        return this.nombreCompleto;
+    }
+    // -------------------------
+    public void setNombreCompleto( String nombreCompleto ) {
+        this.nombreCompleto = nombreCompleto;
+    }
+}
